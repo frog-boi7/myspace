@@ -1,0 +1,184 @@
+{.section item}
+
+<table border="0" cellpadding="0" cellspacing="0" class="nav" width="100%">
+	<tbody>
+		<tr>
+			<td>
+				<!--PAGINATION-->
+				{.section pagination}
+				  <nav class="blog-item-pagination">
+				
+					<!--NEWER PAGE-->
+					{.section prevItem}
+					  <a href="{fullUrl}">Newer</a>
+					{.or}
+					  <a class="disabled">Newer</a>
+					{.end}
+				
+					<!--OLDER PAGE-->
+					{.section nextItem}
+					  <a href="{fullUrl}">Older</a>
+					{.or}
+					  <a class="disabled">Older</a>
+					{.end}
+				
+				  </nav>
+				{.end}</td>
+			<td align="right" nowrap="nowrap"> <a href="{fullUrl}?format=rss">rss</a> | <a href="/account/login">sign in</a> | <a href="/account/logout">sign out</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<div id="googleadstyle">&nbsp;</div>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td valign="top" width="20%">
+			<table class="profile">
+				<tbody>
+					<tr>
+						<td align="center"><p><a href="{website.logoImageUrl}"><strong>{website.siteTagLine}<strong></a><br>
+						 <img border="0" src="{website.logoImageUrl}" /></p>
+
+						<div class="DataPoint=OnlineNow;UserID=6221;" id="UserDataNode0" style="width:80px;height:20px;">&nbsp;</div>
+
+						<p>&nbsp;</p>
+
+						<p><b>Last Updated:</b><br />
+						{collection.updatedOn}</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><a href="/contact">Send Message</a><br />
+						<a href="https://m.me/omariharebin">Instant Message</a><br />
+						<a href="mailto:Enter%20an%20email?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20http://mysquare.space">
+							Email to a Friend</a><br />
+						<a href="/subscribe">Subscribe</a></td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<table class="profile">
+				<tbody>
+					<tr>
+					<td><squarespace:block-field id="stats" columns="1"/><br />
+						
+						<br />
+						<b>City</b>: {website.location.addressLine2}<br />
+						<b>State</b>: {website.location.addressState}<br />
+						<b>Country</b>: {website.location.addressCountry}<br />
+						<br />
+						<b>Signup Date</b>: 08/02/05</td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<table class="profile">
+				<tbody>
+					<tr>
+						<td><strong>Tags:</strong> <span style="font-size:xx-small;"> <!--TAGS--> {.repeated section tags} <a class="tag" href="{collection.fullUrl}?tag={@|url-encode}">{@}</a>{.alternates with}, {.end} </span></td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<div id="CMS_BlogPostPage_Gads_A">
+			<div>&nbsp;</div>
+			</div>
+			</td>
+			<td width="5"><img alt="" border="0" height="1" src="https://web.archive.org/web/20080907025746im_/http://x.myspace.com/images/spacer.gif" width="5" /></td>
+			<!-- Get resource file-name (06/21/2006)-->
+			<td id="blogParent" valign="top" width="80%"><p class="blogTimeStamp">{.end}</p>
+				{.section item}
+
+				<!--WRAPPER-->
+				<article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+			  
+				  <!--POST TILE-->
+				  <h1 class="title" data-content-field="title">
+					{.passthrough?}
+					  <a href="{sourceUrl}" target="_blank">{title}</a>
+					{.or}
+					  {title}
+					{.end}
+				  </h1>
+			  
+				  <!--AUTHOR AND DATE-->
+				  <p class="meta">
+					<a href="{fullUrl}" class="permalink"><time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a> by <a href="{collection.fullUrl}?author={author.id}">{author.displayName}</a>
+				  </p>
+			  
+				  <!--MAIN CONTENT-->
+				  {body}
+			  
+				  <!--BLOG INJECTION-->
+				  {postItemInjectCode}
+			  
+				  <!--CATEGORIES-->
+				  {.repeated section categories}
+					<a class="category" href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with},
+				  {.end}
+			  
+				  <!--TAGS-->
+				  {.repeated section tags}
+					<a class="tag" href="{collection.fullUrl}?tag={@|url-encode}">{@}</a>{.alternates with},
+				  {.end}
+			  
+				  <!--SHARE AND LIKE-->
+				  
+				  {@|social-button}
+			  
+
+			<p class="blogContentInfo"><b>- {@|comment-count} Comments - {@|like-button}</b>-</p>
+			  
+				  <!--LOCATION-->
+				  {.section location}
+					{.section addressTitle}
+					  {addressTitle}
+					  {addressLine1}
+					  {addressLine2}
+					  {addressCountry}
+					{.end}
+				  {.end}
+			  
+				  <!--COMMENTS-->
+				  {@|comments}
+
+
+			  
+				</article>
+			  
+			  {.end}
+			  
+			  
+			  <!--PAGINATION-->
+			  {.section pagination}
+				<nav class="blog-item-pagination">
+			  
+				  <!--NEWER PAGE-->
+				  {.section prevItem}
+					<a href="{fullUrl}">Newer</a>
+				  {.or}
+					<a class="disabled">Newer</a>
+				  {.end}
+			  
+				  <!--OLDER PAGE-->
+				  {.section nextItem}
+					<a href="{fullUrl}">Older</a>
+				  {.or}
+					<a class="disabled">Older</a>
+				  {.end}
+			  
+				</nav>
+			  {.end}
+
+			<table border="0" cellpadding="2" cellspacing="0" class="blogContentInfo">
+			</table>
+
+			</td>
+		</tr>
+	</tbody>
+</table>

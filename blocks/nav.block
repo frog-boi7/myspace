@@ -1,0 +1,23 @@
+<nav>
+  <ul>
+    {.repeated section items}
+
+      <li>
+
+        <!-- collection link -->
+        {.section collection}
+          <a href="{fullUrl}">{navigationTitle}</a>
+        {.end}
+
+        <!-- external link -->
+        {.section externalLink}
+          <a href="{url}"{.section newWindow} target="_blank"{.end}>
+            {title}
+          </a>
+        {.end}
+
+      </li>
+
+    {.end}
+  </ul>
+</nav>

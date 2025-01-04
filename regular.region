@@ -1,0 +1,72 @@
+
+          <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Myspace</title>
+
+  <!-- include system scripts, page meta, and header code injection -->
+  {squarespace-headers}
+</head>
+
+<body>
+
+  <div class="master-container">
+
+    <!-- Main Header Begins -->
+    <header class="main-header">
+      <nav class="search-bar">
+
+        <ul class="topnav home">
+          <li><a href="/">{website.siteTitle}</a></li>
+          
+        </ul>
+
+<div>
+          
+         <squarespace:block-field id="searchnav" columns="1"/ >
+
+</div>
+        <ul class="topnav signup">
+          <li><a href="/help">Help</a></li>
+          <li><a href="/account/login/create">SignUp</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navbar" center="align" >
+     
+    <squarespace:navigation navigationId="siteNav" template="nav" />
+      </nav>
+      
+
+    </header>
+    <!-- Main Header Ends -->
+
+
+
+     
+              <section class="Main-content" data-content-field="main-content">
+                {squarespace.main-content}
+              </section>
+            {.end}
+           
+    <!-- Footer -->
+    <footer class="footer">
+     
+    <squarespace:navigation navigationId="footerNav" template="footer" />
+
+      
+    <small>Squarespace Template by <a href="Sqspthemes.com">Sqspthemes.com</small>
+     
+
+    </footer>
+  </div>
+
+</body>
+
+</html>

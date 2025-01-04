@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>{website.siteTitle}</title>
+
+  <!-- include system scripts, page meta, and header code injection -->
+  {squarespace-headers}
+
+  
+</head>
+
+<body>
+
+  <div class="master-container">
+
+    <!-- Main Header Begins -->
+    <header class="main-header">
+      <nav class="search-bar">
+
+        <ul class="topnav home">
+          <li><a href="/">{website.siteTitle}</a></li>
+          
+        </ul>
+
+<div>
+          
+         <squarespace:block-field id="searchnav" columns="1"/ >
+
+</div>
+        <ul class="topnav signup">
+          <li><a href="/help">Help</a></li>
+          <li><a href="/account/login/create">SignUp</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navbar" center="align" >
+     
+    <squarespace:navigation navigationId="siteNav" template="nav" />
+      </nav>
+      
+
+    </header>
+    <!-- Main Header Ends -->
+
+    <div class="page-content-container">
+
+      <!-- Profile Sidebar Begins -->
+      <aside class="profile-sidebar">
+
+        <header>
+          <h1>{website.siteTagLine}</h1>
+        </header>
+
+        <!-- Profile Picture -->
+        <div class="profile-picture-container">
+          <img class="profile-pic" src="{website.logoImageUrl}" alt="Your logo image goes here. Put your name in your site title tagline.">
+          <span class="personal-msg">{collection.description}</span>
+          <ul class="gender-age">
+            <li><squarespace:block-field id="gender" columns="1"/></li>
+            <li><squarespace:block-field id="age" columns="1"/></li>
+            <li>{website.location.addressLine2}</li>
+            <li>{website.location.addressCountry}</li>
+          </ul>
+
+          <ul class="last-login">
+            <li>Last Login:</li>
+            <li>{collection.updatedOn}</li>
+          </ul>
+
+          <p class="pics-videos">View My: <a href="/pics"><b>Pics</b></a> | <a href="/videos"><b>Videos</b></a></p>
+        </div>
+
+        <!-- Contact Box -->
+        <section class="contact-box">
+          <h2>Contacting {website.siteTagLine}</h2>
+
+          <figure class="contact-images">
+            <a href="/contact"><img src="assets/sendMailIcon.gif" alt="Send Message"></a>
+            <a href="mailto:?subject=yo%20check%20this%20out!"> <img src="assets/forwardMailIcon.gif" alt="Forward to Friend"></a>
+            <a href="/add-to-friends"><img src="assets/addFriendIcon.gif" alt="Add to Friends"></a>
+            <img src="/assets/addFavoritesIcon.gif" alt="Add to Favorites">
+            <a href="/instant-message"><img src="/assets/messagefriend.gif" alt="Instant Message"></a>
+            <img src="/assets/blockUser.gif" alt="Block User">
+            <a href="https://facebook.com/groups/sqspthemes"><img src="/assets/addToGroupIcon.gif" alt="Add to FB Group"></a>
+            <img src="/assets/rankUserIcon.gif" alt="Rank User">
+          </figure>
+        </section>
+
+        <!-- MySquareSpace URL -->
+        <section class="myspace-url-box">
+          <h3><b>{website.siteTitle} URL:</b></h3>
+          <p>{website.authenticUrl}</p>
+        </section>
+
+
+
+
+<section class="music">
+<squarespace:block-field id="music-widget" columns="1"/>
+<p></p>
+</section>
+
+
+
+
+        <!-- Interests Section -->
+        <section class="interests">
+          <table class="sidebar-table">
+
+            <caption>
+              <h2 class="sidebar-table-h2">{website.siteTagLine}'s Interests</h2>
+            </caption>
+
+            <tbody>
+              <tr>
+                <th class="sidebar-table-header" scope="row">General</th>
+                <td class="sidebar-table-data">
+                  <p><squarespace:block-field id="general" columns="1"/></p>
+                </td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Music</th>
+                <td class="sidebar-table-data">
+                  <p><squarespace:block-field id="music" columns="1"/>
+                    
+                </td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Movies</th>
+                <td class="sidebar-table-data">
+                  <squarespace:block-field id="movies" columns="1"/>
+                </td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Television</th>
+                <td class="sidebar-table-data">
+                  <squarespace:block-field id="tv" columns="1"/>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </section>
+
+
+
+        <!-- Your Details Section -->
+        <section class="details">
+          <table class="sidebar-table">
+
+            <caption>
+              <h2 class="sidebar-table-h2">{website.siteTagLine}'s Details</h2>
+            </caption>
+
+            <tbody>
+              <tr>
+                <th class="sidebar-table-header" scope="row">Status:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="status" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Here For:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="herefor" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Hometown:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="hometown" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Ethnicity:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="ethnicity" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Zodiac Sign:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="zodiac" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Smoke / Drink:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="smoke" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">Occupation:</th>
+                <td class="sidebar-table-data"><squarespace:block-field id="occupation" columns="1"/></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Your Schools Section -->
+        <section class="schools">
+          <table class="sidebar-table">
+
+            <caption>
+              <h2 class="sidebar-table-h2">{website.siteTagLine}'s Schools</h2>
+            </caption>
+
+            <tbody>
+              <tr>
+                <th class="sidebar-table-header" scope="row">
+                  <ul>
+                    <squarespace:block-field id="school1" columns="1"/>
+                    
+                  </ul>
+                </th>
+                <td class="sidebar-table-data"><squarespace:block-field id="dateattended1" columns="1"/></td>
+              </tr>
+
+              <tr>
+                <th class="sidebar-table-header" scope="row">
+                  <ul>
+                    <squarespace:block-field id="school2" columns="1"/>
+                    
+                  </ul>
+                </th>
+                <td class="sidebar-table-data"><squarespace:block-field id="dateattended2" columns="1"/></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </section>
+      </aside>
+      <!-- Profile Side Bar Ends -->
+
+      <!-- Main Section -->
+      <main>
+
+        <section class="user-network">
+
+          <header>
+          <h2>{website.siteTagLine} is in your extended network</h2>
+          </header>
+        </section>
+
+        <section class="homeblog">
+          <p><b>{website.siteTagLine}'s Latest Blog Entry</b> [<a href="/subscribe">Subscribe to this Blog</a>]</p>
+          <squarespace:query collection="blog" limit="8">
+          
+            {.repeated section items}
+              <p>{title} (<a href="{fullUrl}">view more</a>)</p>
+            {.end}
+          
+        </squarespace:query>
+          <p>[<a href="/blog">View All Blog Entries</a>]</p>
+        </section>
+
+        <section class="blurbs">
+          <header class="main-section-header">
+            <h2 class="main-section-h2">{website.siteTagLine}'s Blurbs</h2>
+          </header>
+
+          <h3>About me:</h3>
+          <squarespace:block-field id="aboutme" columns="1"/>
+          <p></p>
+          <h3>Who I'd like to meet:</h3>
+          <squarespace:block-field id="whotomeet" columns="12"/>
+           <p></p>
+        </section>
+
+        <section id="friends" class="friends">
+          <header class="main-section-header">
+            <h2 class="main-section-h2">{website.siteTagLine}'s Friend Space</h2>
+          </header>
+
+          <p><b>{website.siteTagLine} has <span class="focus-highlight">a few</span> Friends.</b></p>
+
+          <div class="friend-pic-container">
+
+
+            <squarespace:query collection="friends" limit="8">
+
+              {.repeated section items}
+
+            <figure>
+                <figcaption><a href="{sourceUrl}">{title}</a></figcaption>
+                <img src="{assetUrl}?format=100w">
+            </figure>
+          
+            {.end}
+          </squarespace:query>
+          </div>
+
+          <p class="friends-list-link"><a href="/friends">View All of {website.siteTagLine}'s Friends</a></p>
+        </section>
+
+        <section class="comment-wall">
+          <header class="main-section-header">
+            <h2 class="main-section-h2">{website.siteTagLine}'s Friends Comments</h2>
+          </header>
+
+        
+          <table>
+            <tr>
+              <th scope="row">
+                <td>
+                           <squarespace:block-field id="comments" columns="1"/ >
+
+                </td>
+            </th>
+            </tr>
+            
+              
+          </table>
+
+          
+
+        </section>
+      </main>
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+    <squarespace:navigation navigationId="footerNav" template="footer" />
+
+      <small>Template by <a href="https://Sqspthemes.com">Sqspthemes.com</a> | Powered by <a href="https://Sqspthemes.com/squarespace">Squarespace</a> </small>
+     
+    </footer>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
