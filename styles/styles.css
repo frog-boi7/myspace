@@ -163,9 +163,14 @@ Search Bar
   height: 15px;
 }
 
-#searchnav{
-  width:200px;
-  margin-top: 5px ;
+/* Center the Squarespace logo block in the middle column */
+
+#searchnav {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .submit-btn {
