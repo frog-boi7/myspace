@@ -77,16 +77,16 @@
     <img src="/assets/sendMailIcon.gif" alt="Send Message">
   </a>
   <a href="https://form.jotform.com/241165842745157">
-    <img src="/assets/forwardMailIcon.gif" alt="Book Now">
+    <img src="/assets/booknow.png" alt="Book Now">
   </a>
   <a href="https://www.instagram.com/alittlepoke?igsh=NTc4MTIwNjQ2YQ==">
-    <img src="/assets/addFriendIcon.gif" alt="Instagram">
+    <img src="/assets/ig.png" alt="Instagram">
   </a>
   <a href="https://www.tiktok.com/@alittlepoke?_t=ZP-8skUPvtWAcp&_r=1">
-    <img src="/assets/addFavoritesIcon.gif" alt="TikTok">
+    <img src="/assets/tiktok.png" alt="TikTok">
   </a>
   <a href="/faq">
-    <img src="/assets/messagefriend.gif" alt="FAQs">
+    <img src="/assets/faqs.png" alt="FAQs">
   </a>
   <a href="https://youtu.be/AtPrjYp75uA?si=gqlgG_mwwCwgMqjt">
     <img src="/assets/blockUser.gif" alt="Block User">
