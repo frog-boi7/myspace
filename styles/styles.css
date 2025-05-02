@@ -169,8 +169,9 @@ Search Bar
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 120px; /* set a visible height */
   margin: 0 auto;
+  width: 100%;
 }
            
 .submit-btn {
