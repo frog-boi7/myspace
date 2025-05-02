@@ -21,23 +21,7 @@
 
     <!-- Main Header Begins -->
     <header class="main-header">
-      <nav class="search-bar">
-
-        <ul class="topnav home">
-          <li><a href="/">{website.siteTitle}</a></li>
-          
-        </ul>
-
-<div>
-          
-         <squarespace:block-field id="searchnav" columns="1"/ >
-
-</div>
-        <ul class="topnav signup">
-          <li><a href="/help">Help</a></li>
-          <li><a href="/account/login/create">SignUp</a></li>
-        </ul>
-      </nav>
+      
 
 <div class="logo-banner-container">
   <img 
