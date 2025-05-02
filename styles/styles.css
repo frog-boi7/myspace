@@ -235,7 +235,7 @@ Navigation Bar
 }
 
 .logo-banner-img {
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
   display: inline-block;
 }
