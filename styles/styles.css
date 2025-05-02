@@ -216,7 +216,7 @@ Navigation Bar
 }
 
 .navbar li::after {
-  content: '|';
+  content: ' ';
   margin: .33rem;
   color: black;
 }
@@ -236,7 +236,7 @@ Navigation Bar
 
 .logo-banner-img {
   max-width: 600px;
-  height: 60px;
+  height: 90px;
   display: inline-block;
 }
 
