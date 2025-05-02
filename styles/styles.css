@@ -229,6 +229,19 @@ Navigation Bar
   color: @navlinkhoverColor;
 }
 
+.logo-banner-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.logo-banner-img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+
+           
 /*
 ========================================
 Page Content Container
