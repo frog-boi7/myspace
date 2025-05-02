@@ -170,10 +170,7 @@
             </caption>
 
             <tbody>
-              <tr>
-                <th class="sidebar-table-header" scope="row">Status:</th>
-                <td class="sidebar-table-data"><squarespace:block-field id="status" columns="1"/></td>
-              </tr>
+        
 
               <tr>
                 <th class="sidebar-table-header" scope="row">Here For:</th>
