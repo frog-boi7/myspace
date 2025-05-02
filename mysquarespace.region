@@ -62,7 +62,7 @@
 
           <ul class="last-login">
             <li>Last Login:</li>
-            <li>{collection.updatedOn}</li>
+            <li>11/11/11</li>
           </ul>
 
           <p class="pics-videos">View My: <a href="/pics"><b>Pics</b></a> | <a href="/videos"><b>Videos</b></a></p>
