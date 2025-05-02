@@ -72,16 +72,32 @@
         <section class="contact-box">
           <h2>Contacting {website.siteTagLine}</h2>
 
-          <figure class="contact-images">
-            <a href="/contact"><img src="assets/sendMailIcon.gif" alt="Send Message"></a>
-            <a href="mailto:?subject=yo%20check%20this%20out!"> <img src="assets/forwardMailIcon.gif" alt="Forward to Friend"></a>
-            <a href="/add-to-friends"><img src="assets/addFriendIcon.gif" alt="Add to Friends"></a>
-            <img src="/assets/addFavoritesIcon.gif" alt="Add to Favorites">
-            <a href="/instant-message"><img src="/assets/messagefriend.gif" alt="Instant Message"></a>
-            <img src="/assets/blockUser.gif" alt="Block User">
-            <a href="https://facebook.com/groups/sqspthemes"><img src="/assets/addToGroupIcon.gif" alt="Add to FB Group"></a>
-            <img src="/assets/rankUserIcon.gif" alt="Rank User">
-          </figure>
+   <figure class="contact-images">
+  <a href="mailto:alittlepoke@gmail.com">
+    <img src="/assets/sendMailIcon.gif" alt="Send Message">
+  </a>
+  <a href="https://form.jotform.com/241165842745157">
+    <img src="/assets/forwardMailIcon.gif" alt="Book Now">
+  </a>
+  <a href="https://www.instagram.com/alittlepoke?igsh=NTc4MTIwNjQ2YQ==">
+    <img src="/assets/addFriendIcon.gif" alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@alittlepoke?_t=ZP-8skUPvtWAcp&_r=1">
+    <img src="/assets/addFavoritesIcon.gif" alt="TikTok">
+  </a>
+  <a href="/faq">
+    <img src="/assets/messagefriend.gif" alt="FAQs">
+  </a>
+  <a href="https://youtu.be/AtPrjYp75uA?si=gqlgG_mwwCwgMqjt">
+    <img src="/assets/blockUser.gif" alt="Block User">
+  </a>
+  <a href="/other-art">
+    <img src="/assets/addToGroupIcon.gif" alt="Other Art">
+  </a>
+  <a href="/store">
+    <img src="/assets/rankUserIcon.gif" alt="Store">
+  </a>
+</figure>
         </section>
 
         <!-- MySquareSpace URL -->
@@ -169,20 +185,14 @@
                 <td class="sidebar-table-data"><squarespace:block-field id="hometown" columns="1"/></td>
               </tr>
 
-              <tr>
-                <th class="sidebar-table-header" scope="row">Ethnicity:</th>
-                <td class="sidebar-table-data"><squarespace:block-field id="ethnicity" columns="1"/></td>
-              </tr>
+          
 
               <tr>
                 <th class="sidebar-table-header" scope="row">Zodiac Sign:</th>
                 <td class="sidebar-table-data"><squarespace:block-field id="zodiac" columns="1"/></td>
               </tr>
 
-              <tr>
-                <th class="sidebar-table-header" scope="row">Smoke / Drink:</th>
-                <td class="sidebar-table-data"><squarespace:block-field id="smoke" columns="1"/></td>
-              </tr>
+           
 
               <tr>
                 <th class="sidebar-table-header" scope="row">Occupation:</th>
@@ -193,39 +203,7 @@
           </table>
         </section>
 
-        <!-- Your Schools Section -->
-        <section class="schools">
-          <table class="sidebar-table">
-
-            <caption>
-              <h2 class="sidebar-table-h2">{website.siteTagLine}'s Schools</h2>
-            </caption>
-
-            <tbody>
-              <tr>
-                <th class="sidebar-table-header" scope="row">
-                  <ul>
-                    <squarespace:block-field id="school1" columns="1"/>
-                    
-                  </ul>
-                </th>
-                <td class="sidebar-table-data"><squarespace:block-field id="dateattended1" columns="1"/></td>
-              </tr>
-
-              <tr>
-                <th class="sidebar-table-header" scope="row">
-                  <ul>
-                    <squarespace:block-field id="school2" columns="1"/>
-                    
-                  </ul>
-                </th>
-                <td class="sidebar-table-data"><squarespace:block-field id="dateattended2" columns="1"/></td>
-              </tr>
-
-            </tbody>
-          </table>
-
-        </section>
+        
       </aside>
       <!-- Profile Side Bar Ends -->
 
@@ -287,7 +265,7 @@
           </squarespace:query>
           </div>
 
-          <p class="friends-list-link"><a href="/friends">View All of {website.siteTagLine}'s Friends</a></p>
+        
         </section>
 
         <section class="comment-wall">
