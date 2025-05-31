@@ -874,6 +874,17 @@ footer small {
     margin: 10px 0;
   }
 
+  .user-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: 75px;
+  border: 2px solid black;
+  margin-top: 13px;
+}
+
   .sidebar-table,
   .contact-box {
     width: 100%;
