@@ -617,6 +617,16 @@ Blurbs
 Friend Space
 ========================================
 */
+
+.friend-pic-container {
+  display: grid;
+  grid-template-columns: repeat(4, 109px);
+  gap: 12px;
+  overflow: hidden;
+  height: 193px; /* same as one row’s height */
+}
+
+           
 .friends header {
   margin-bottom: 6px;
 }
@@ -635,7 +645,7 @@ Friend Space
 .friend-pic-container {
   display: grid;
   grid-template-columns: repeat(4, 109px);
-  grid-template-rows: 160px 193px;
+  /* grid-template-rows: 160px 193px; */
 }
 
 .friend-pic-container figure {
