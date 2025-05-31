@@ -373,7 +373,7 @@ Contact Box
   display: flex;
   align-items: center;
   gap: 0.4em; /* Space between icon and text */
-  margin: 0.3em 0;
+  margin: 0.5em 0;
   
 }
 
