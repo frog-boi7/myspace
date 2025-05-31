@@ -374,7 +374,7 @@ Contact Box
   align-items: center;
   gap: 0.4em; /* Space between icon and text */
   margin: 0.3em 0;
-  font-size: 1rem;
+  
 }
 
 .contact-images p i,
