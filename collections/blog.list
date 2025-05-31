@@ -135,3 +135,13 @@
 		</tr>
 	</tbody>
 </table>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('img[data-src]').forEach(function (img) {
+      if (!img.getAttribute('src')) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+      }
+    });
+  });
+</script>
