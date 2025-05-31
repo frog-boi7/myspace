@@ -25,35 +25,14 @@
 
 						<p>&nbsp;</p>
 
-						<p><b>Last Updated:</b><br />
-						{collection.updatedOn}</p>
+						
 						</td>
 					</tr>
 
 
 
 					<tr>
-						<td align="center"><a href="/contact">Send Message</a><br />
-						<a href="https://m.me/omariharebin">Instant Message</a><br />
-						<a href="mailto:Enter%20an%20email?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20http://mysquare.space">
-							Email to a Friend</a><br />
-						<a href="/subscribe">Subscribe</a></td>
-					</tr>
-				</tbody>
-			</table>
-			&nbsp;
-
-			<table class="profile">
-				<tbody>
-					<tr>
 					
-						<td><squarespace:block-field id="stats" columns="1"/><br />
-						<br />
-						<b>City</b>: {website.location.addressLine2}<br />
-						<b>State</b>: {website.location.addressState}<br />
-						<b>Country</b>: {website.location.addressCountry}<br />
-						<br />
-						<b>Signup Date</b>: 08/02/05</td>
 					</tr>
 				</tbody>
 			</table>
@@ -61,9 +40,14 @@
 
 			<table class="profile">
 				<tbody>
-					<tr>
-						<td><strong>Tags:</strong> <span style="font-size:xx-small;"> <!--TAGS--> {.repeated section tags} <a class="tag" href="{collection.fullUrl}?tag={@|url-encode}">{@}</a>{.alternates with}, {.end} </span></td>
-					</tr>
+					
+				</tbody>
+			</table>
+			&nbsp;
+
+			<table class="profile">
+				<tbody>
+				
 				</tbody>
 			</table>
 			&nbsp;
