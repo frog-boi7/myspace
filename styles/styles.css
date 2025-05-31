@@ -872,6 +872,12 @@ footer small {
     margin: 10px 0;
   }
 
+.master-container {
+  margin: auto;
+  width: 600px;
+  background-color: @BackgroundColor;
+}
+  
   .user-network {
   display: flex;
   justify-content: center;
