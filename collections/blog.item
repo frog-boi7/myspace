@@ -63,9 +63,7 @@
 
 			<table class="profile">
 				<tbody>
-					<tr>
-						<td><strong>Tags:</strong> <span style="font-size:xx-small;"> <!--TAGS--> {.repeated section tags} <a class="tag" href="{collection.fullUrl}?tag={@|url-encode}">{@}</a>{.alternates with}, {.end} </span></td>
-					</tr>
+					
 				</tbody>
 			</table>
 			&nbsp;
