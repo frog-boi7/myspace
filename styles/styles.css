@@ -224,11 +224,7 @@ Navigation Bar
   height: 26px;
 }
 
-*/.navbar ul {
-  */ display: flex;
- */ margin: 0 auto;
-  */ padding: 0;
-*/}
+
 
 .navbar li::after {
   content: ' ';
