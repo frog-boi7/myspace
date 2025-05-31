@@ -199,7 +199,7 @@
         </section>
 
         <section class="homeblog">
-          <p><b>{website.siteTagLine}'s Latest Blog Entry</b> [<a href="/subscribe">Subscribe to this Blog</a>]</p>
+          <p><b>{website.siteTagLine}'s Latest Blog Entry</b> [<a href="/newsletter">Subscribe to this Blog</a>]</p>
           <squarespace:query collection="blog" limit="8">
           
             {.repeated section items}
