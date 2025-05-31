@@ -380,7 +380,7 @@ Contact Box
 .contact-images p i,
 .contact-images p span,
 .contact-images p::before {
-  line-height: 1;
+  line-height: 1.2;
 }
 
 /*
