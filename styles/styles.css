@@ -97,7 +97,8 @@ Master Container
 */
 .master-container {
   margin: auto;
-  width: @pageWidth;
+  max-width: @pageWidth;
+  width: 100%;
   background-color: @BackgroundColor;
 }
 
@@ -239,7 +240,13 @@ Navigation Bar
   height: 90px;
   display: inline-block;
 }
-
+           
+@media (max-width: 600px) {
+           .logo-banner-img {
+  max-width: 100%;
+  height: auto;
+}
+}
 
            
 /*
@@ -255,11 +262,21 @@ Page Content Container
 }
 
 @media (max-width: 800px) {
-.page-content-container {
-  display: flex;
-  grid-template-columns: 325px 453px;
-  grid-column-gap: 20px;
-  grid-template-areas: "sidebar main";
+  .page-content-container {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  main {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 }
 
@@ -520,6 +537,19 @@ main {
   display: block;
 }
 
+           @media (max-width: 600px) {
+  .main-image {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .main-image img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
 /*
 ========================================
 User Network
@@ -638,9 +668,20 @@ Friend Space
   grid-template-columns: repeat(4, 109px);
   gap: 12px;
   overflow: hidden;
-  height: 193px; /* same as one row’s height */
+  height: auto;
+  justify-content: center;
 }
 
+@media (max-width: 600px) {
+  .friend-pic-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .friend-pic-container img {
+    max-width: 100%;
+  }
+}
            
 .friends header {
   margin-bottom: 6px;
