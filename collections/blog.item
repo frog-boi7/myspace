@@ -56,16 +56,7 @@
 
 			<table class="profile">
 				<tbody>
-					<tr>
-					<td><squarespace:block-field id="stats" columns="1"/><br />
-						
-						<br />
-						<b>City</b>: {website.location.addressLine2}<br />
-						<b>State</b>: {website.location.addressState}<br />
-						<b>Country</b>: {website.location.addressCountry}<br />
-						<br />
-						<b>Signup Date</b>: 08/02/05</td>
-					</tr>
+					
 				</tbody>
 			</table>
 			&nbsp;
