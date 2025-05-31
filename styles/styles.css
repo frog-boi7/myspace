@@ -856,4 +856,39 @@ footer small {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 600px) {
+  article,
+  .blog,
+  .homeblog,
+  .blurbs,
+  .comment-wall {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .sidebar-table,
+  .contact-box {
+    width: 100%;
+  }
+
+  .profile-picture-container {
+    display: block;
+  }
+
+  .profile-pic {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .main-header {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .main-header ul {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 
