@@ -368,6 +368,21 @@ Contact Box
   margin-left: 10px;
 }
 
+
+.contact-images p {
+  display: flex;
+  align-items: center;
+  gap: 0.4em; /* Space between icon and text */
+  margin: 0.3em 0;
+  font-size: 1rem;
+}
+
+.contact-images p i,
+.contact-images p span,
+.contact-images p::before {
+  line-height: 1;
+}
+
 /*
 ========================================
 MySpace URL
