@@ -72,31 +72,15 @@
         <section class="contact-box">
           <h2>Contacting {website.siteTagLine}</h2>
 
-   <figure class="contact-images">
-  <a href="mailto:alittlepoke@gmail.com">
-    <img src="/assets/sendMailIcon.gif" alt="Send Message">
-  </a>
-  <a href="https://form.jotform.com/241165842745157">
-    <img src="/assets/booknow.png" alt="Book Now">
-  </a>
-  <a href="https://www.instagram.com/alittlepoke?igsh=NTc4MTIwNjQ2YQ==">
-    <img src="/assets/ig.png" alt="Instagram">
-  </a>
-  <a href="https://www.tiktok.com/@alittlepoke?_t=ZP-8skUPvtWAcp&_r=1">
-    <img src="/assets/tiktok.png" alt="TikTok">
-  </a>
-  <a href="/faq">
-    <img src="/assets/faqs.png" alt="FAQs">
-  </a>
-  <a href="https://youtu.be/AtPrjYp75uA?si=gqlgG_mwwCwgMqjt">
-    <img src="/assets/blockUser.gif" alt="Block User">
-  </a>
-  <a href="/other-art">
-    <img src="/assets/addToGroupIcon.gif" alt="Other Art">
-  </a>
-  <a href="/store">
-    <img src="/assets/rankUserIcon.gif" alt="Store">
-  </a>
+  <figure class="contact-images text-version">
+  <p>✉️ <a href="mailto:alittlepoke@gmail.com">Send Message</a></p>
+  <p>📅 <a href="https://form.jotform.com/241165842745157">Book Now</a></p>
+  <p>📸 <a href="https://www.instagram.com/alittlepoke?igsh=NTc4MTIwNjQ2YQ==">Instagram</a></p>
+  <p>🎵 <a href="https://www.tiktok.com/@alittlepoke?_t=ZP-8skUPvtWAcp&_r=1">TikTok</a></p>
+  <p>❓ <a href="/faq">FAQs</a></p>
+  <p>🚫 <a href="https://youtu.be/AtPrjYp75uA?si=gqlgG_mwwCwgMqjt">Block User</a></p>
+  <p>➕ <a href="/other-art">Add to Group</a></p>
+  <p>📦 <a href="/store">Store</a></p>
 </figure>
         </section>
 
