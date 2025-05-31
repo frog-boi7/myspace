@@ -44,16 +44,11 @@
 
 						<p>&nbsp;</p>
 
-						<p><b>Last Updated:</b><br />
-						{collection.updatedOn}</p>
+						
 						</td>
 					</tr>
 					<tr>
-						<td align="center"><a href="/contact">Send Message</a><br />
-						<a href="https://m.me/omariharebin">Instant Message</a><br />
-						<a href="mailto:Enter%20an%20email?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20http://mysquare.space">
-							Email to a Friend</a><br />
-						<a href="/subscribe">Subscribe</a></td>
+						
 					</tr>
 				</tbody>
 			</table>
