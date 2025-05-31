@@ -233,7 +233,7 @@
           <div class="friend-pic-container">
 
 
-            <squarespace:query collection="friends" limit="8">
+            <squarespace:query collection="friends" limit="4">
 
               {.repeated section items}
 
