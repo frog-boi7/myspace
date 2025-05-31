@@ -24,8 +24,7 @@
 				
 				  </nav>
 				{.end}</td>
-			<td align="right" nowrap="nowrap"> <a href="{fullUrl}?format=rss">rss</a> | <a href="/account/login">sign in</a> | <a href="/account/logout">sign out</a></td>
-		</tr>
+				</tr>
 	</tbody>
 </table>
 
