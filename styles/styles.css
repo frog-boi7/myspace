@@ -922,16 +922,62 @@ footer small {
   }
   
 }
-           @media (max-width: 600px) {
+       @media (max-width: 600px) {
   .navbar ul {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 10px;
     padding: 0;
     margin: 0 auto;
+    list-style: none;
+    white-space: nowrap;
   }
 
   .navbar li {
-    margin: 6px 0;
+    flex-shrink: 0;
+    padding: 5px 8px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+           @media (max-width: 600px) {
+  .profile-picture-container {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    column-gap: 15px;
+    align-items: start;
+    margin-bottom: 12px;
+  }
+
+  .profile-pic {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    display: block;
+  }
+
+  .gender-age,
+  .last-login,
+  .pics-videos {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gender-age li,
+  .last-login li {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .personal-msg {
+    display: block;
+    margin-bottom: 8px;
   }
 }
 
