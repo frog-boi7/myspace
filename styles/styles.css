@@ -1067,6 +1067,9 @@ footer small {
     width: auto;
     height: auto;
   }
+      .hide-on-mobile {
+    display: none;
+  }
 }
 
 
