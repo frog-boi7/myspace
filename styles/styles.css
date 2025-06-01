@@ -922,32 +922,42 @@ footer small {
   }
   
 }
-      @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .navbar ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .navbar li {
-    padding: 4px 0;
-  }
-
-  .navbar a {
-    font-size: 14px;
-    color: @navlinkColor;
-  }
+     .navbar {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  background-color: @navbarBackgroundColor;
+}
+
+.navbar li {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar li:last-child {
+  border-bottom: none;
+}
+
+.navbar a {
+  color: @navlinkColor;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
 
            @media (max-width: 600px) {
   .profile-picture-container {
