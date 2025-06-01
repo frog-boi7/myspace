@@ -981,6 +981,16 @@ footer small {
 
 
            @media (max-width: 600px) {
+
+
+.friend-pic-container {
+  display: grid;
+  grid-template-columns: repeat(4, 109px);
+  grid-template-rows: 160px 193px; 
+}
+
+
+             
   .profile-picture-container {
     display: grid;
     grid-template-columns: 170px 1fr;
