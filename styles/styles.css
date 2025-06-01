@@ -920,9 +920,7 @@ footer small {
     justify-content: center;
   }
 
-  .friend-pic-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
 }
 @media (max-width: 600px) {
   article,
