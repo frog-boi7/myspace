@@ -1031,39 +1031,30 @@ footer small {
 }
       
 @media (max-width: 640px) {
-  /* Force horizontal layout on mobile for image card blocks */
-  .sqs-block-image .image-card-wrapper {
+  /* Force card layout to stay side-by-side */
+  .image-block-v2.design-layout-card.image-position-left .intrinsic {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     align-items: flex-start !important;
-    justify-content: flex-start !important;
   }
 
-  /* Ensure image stays on left */
-  .sqs-block-image .image-card-wrapper img {
+  /* Shrink image container */
+  .image-block-v2 .sqs-image-shape-container-element {
     width: 45% !important;
-    height: auto !important;
     flex-shrink: 0 !important;
   }
 
-  /* Ensure text stays on right */
-  .sqs-block-image .image-card-content {
+  /* Style the caption container */
+  .image-card-wrapper {
     width: 55% !important;
     padding-left: 1rem !important;
   }
 
-  /* Kill Squarespace mobile-specific stacking */
-  .sqs-block-image .image-card-inner {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-  }
-
-  /* Optional: cap the total width */
-  .sqs-block-image {
-    max-width: 100% !important;
-    overflow-x: hidden;
+  /* Optional cleanup */
+  .image-card .image-title,
+  .image-card .image-subtitle {
+    text-align: left !important;
   }
 }
 
