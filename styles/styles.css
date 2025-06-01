@@ -1029,34 +1029,43 @@ footer small {
     margin-bottom: 8px;
   }
 }
-      
-@media (max-width: 640px) {
-  /* Force card layout to stay side-by-side */
+    @media (max-width: 640px) {
+  /* Keep card layout horizontal */
   .image-block-v2.design-layout-card.image-position-left .intrinsic {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
     align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 1rem;
   }
 
-  /* Shrink image container */
+  /* Make image and caption both flex children */
   .image-block-v2 .sqs-image-shape-container-element {
-    width: 45% !important;
+    width: 60px !important;
     flex-shrink: 0 !important;
   }
 
-  /* Style the caption container */
+  /* Text should take remaining space */
   .image-card-wrapper {
-    width: 55% !important;
-    padding-left: 1rem !important;
+    width: auto !important;
+    flex: 1 !important;
   }
 
-  /* Optional cleanup */
-  .image-card .image-title,
-  .image-card .image-subtitle {
+  /* Make sure figcaption text doesn’t shrink weirdly */
+  .image-title,
+  .image-subtitle {
+    font-size: 0.85rem !important;
     text-align: left !important;
   }
+
+  /* Optional: cap image height so it doesn't stretch */
+  .image-block-v2 .sqs-image-shape-container-element img {
+    max-height: 80px;
+    width: auto;
+    height: auto;
+  }
 }
+
 
 
 
