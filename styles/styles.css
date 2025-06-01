@@ -1029,30 +1029,43 @@ footer small {
     margin-bottom: 8px;
   }
 }
-      @media (max-width: 640px) {
-  /* Target card layout */
-  .image-card, .sqs-block-image .image-card-wrapper {
+      
+@media (max-width: 640px) {
+  /* Force horizontal layout on mobile for image card blocks */
+  .sqs-block-image .image-card-wrapper {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
 
-  .image-card img {
+  /* Ensure image stays on left */
+  .sqs-block-image .image-card-wrapper img {
     width: 45% !important;
     height: auto !important;
+    flex-shrink: 0 !important;
   }
 
-  .image-card .image-card-inner,
-  .image-card .image-card-content {
+  /* Ensure text stays on right */
+  .sqs-block-image .image-card-content {
     width: 55% !important;
-    padding-left: 1rem;
+    padding-left: 1rem !important;
   }
 
-  /* Optional: prevent full-width scaling */
-  .image-card-wrapper {
-    width: 100% !important;
+  /* Kill Squarespace mobile-specific stacking */
+  .sqs-block-image .image-card-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+
+  /* Optional: cap the total width */
+  .sqs-block-image {
+    max-width: 100% !important;
+    overflow-x: hidden;
   }
 }
+
 
 
