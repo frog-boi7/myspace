@@ -984,10 +984,10 @@ footer small {
 
   .friend-pic-container {
   display: grid;
-  grid-template-columns: repeat(4, 109px);
+  grid-template-columns: repeat(2, 109px);
   gap: 12px;
   overflow: hidden;
-  height: 283px; /* same as one row’s height */
+  height: 283px; /* same as two row’s height */
 }
 
   .friend-pic-container img {
