@@ -985,8 +985,8 @@ footer small {
 
 .friend-pic-container {
   display: grid;
-  grid-template-columns: repeat(4, 109px);
-  grid-template-rows: 160px 193px; 
+  grid-template-columns: repeat(2, 1fr); /* or 4 on desktop */
+  gap: 16px;
 }
 
 
