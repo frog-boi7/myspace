@@ -1029,4 +1029,19 @@ footer small {
     margin-bottom: 8px;
   }
 }
+           @media (max-width: 640px) {
+  /* Force images to stay side-by-side */
+  .sqs-gallery-design-stacked .image-block,
+  .sqs-gallery-design-stacked .sqs-col-6 {
+    display: inline-block !important;
+    width: 50% !important;
+    vertical-align: top;
+  }
+
+  /* Prevent full-width scaling */
+  .sqs-gallery-design-stacked .image-block img {
+    width: 100% !important;
+    height: auto;
+  }
+}
 
