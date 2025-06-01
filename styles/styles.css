@@ -988,6 +988,9 @@ footer small {
   gap: 12px;
   overflow: hidden;
   height: 283px; /* same as two row’s height */
+    justify-items: center; /* centers content in each column */
+    width: 100%;
+    margin: 0 auto;
 }
 
   .friend-pic-container img {
