@@ -14,6 +14,39 @@
 </head>
 
 <body>
+<!-- Burger Icon -->
+<div id="burger" class="burger">&#9776;</div>
+
+<!-- Overlay Menu -->
+<div id="overlayNav" class="overlay-nav">
+  <a href="#" class="closebtn" id="closeNav">&times;</a>
+  <div class="overlay-content" id="mobileNavLinks">
+    <!-- We'll clone links here -->
+  </div>
+</div>
+
+  <div class="master-container">
+
+    <!-- Main Header Begins -->
+    <header class="main-header">
+      
+
+<div class="logo-banner-container">
+  <img 
+    src="https://images.squarespace-cdn.com/content/v1/6778270b3373ea10e0f42588/d2309d87-f9e3-4033-97ce-aca8ce4eacce/alittlepoke-logo-long.png" 
+    alt="A Little Poke Logo"
+    class="logo-banner-img"
+  />
+</div>
+
+      <nav class="navbar" center="align" >
+     
+    <squarespace:navigation navigationId="siteNav" template="nav" />
+      </nav>
+      
+
+    </header>
+    <!-- Main Header Ends -->
 
   <div class="master-container">
 
