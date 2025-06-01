@@ -294,6 +294,43 @@
     </footer>
   </div>
   <script src="scripts/app.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger");
+    const overlay = document.getElementById("overlayNav");
+    const closeBtn = document.getElementById("closeNav");
+    const navCloneTarget = document.getElementById("mobileNavLinks");
+    const squarespaceNav = document.querySelector(".navbar ul");
+
+    burger.addEventListener("click", function () {
+      overlay.style.display = "flex";
+
+      // Only clone if not already done
+      if (navCloneTarget.children.length === 0 && squarespaceNav) {
+        [...squarespaceNav.children].forEach((li) => {
+          const link = li.querySelector("a");
+          if (link) {
+            const clone = document.createElement("a");
+            clone.href = link.href;
+            clone.innerText = link.innerText;
+            navCloneTarget.appendChild(clone);
+          }
+        });
+      }
+    });
+
+    closeBtn.addEventListener("click", function () {
+      overlay.style.display = "none";
+    });
+
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) {
+        overlay.style.display = "none";
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
