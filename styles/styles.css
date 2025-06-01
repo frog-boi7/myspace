@@ -985,8 +985,12 @@ footer small {
 
 
   .friend-pic-container {
-    grid-template-columns: repeat(2, 1fr); /* stacks into 2x2 grid */
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 109px);
+  gap: 12px;
+  overflow: hidden;
+  height: 283px; /* same as one row’s height */
+}
 
   .friend-pic-container img {
     width: 100%;
