@@ -16,6 +16,16 @@
 </head>
 
 <body>
+<!-- Burger Icon -->
+<div id="burger" class="burger">&#9776;</div>
+
+<!-- Overlay Menu -->
+<div id="overlayNav" class="overlay-nav">
+  <a href="#" class="closebtn" id="closeNav">&times;</a>
+  <div class="overlay-content" id="mobileNavLinks">
+    <!-- We'll clone links here -->
+  </div>
+</div>
 
   <div class="master-container">
 
