@@ -983,12 +983,15 @@ footer small {
            @media (max-width: 600px) {
 
 
-.friend-pic-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* or 4 on desktop */
-  gap: 16px;
-}
 
+  .friend-pic-container {
+    grid-template-columns: repeat(2, 1fr); /* stacks into 2x2 grid */
+  }
+
+  .friend-pic-container img {
+    width: 100%;
+    height: auto;
+  }
 
              
   .profile-picture-container {
