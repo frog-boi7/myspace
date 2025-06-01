@@ -1029,19 +1029,30 @@ footer small {
     margin-bottom: 8px;
   }
 }
-           @media (max-width: 640px) {
-  /* Force images to stay side-by-side */
-  .sqs-gallery-design-stacked .image-block,
-  .sqs-gallery-design-stacked .sqs-col-6 {
-    display: inline-block !important;
-    width: 50% !important;
-    vertical-align: top;
+      @media (max-width: 640px) {
+  /* Target card layout */
+  .image-card, .sqs-block-image .image-card-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
   }
 
-  /* Prevent full-width scaling */
-  .sqs-gallery-design-stacked .image-block img {
+  .image-card img {
+    width: 45% !important;
+    height: auto !important;
+  }
+
+  .image-card .image-card-inner,
+  .image-card .image-card-content {
+    width: 55% !important;
+    padding-left: 1rem;
+  }
+
+  /* Optional: prevent full-width scaling */
+  .image-card-wrapper {
     width: 100% !important;
-    height: auto;
   }
 }
+
 
